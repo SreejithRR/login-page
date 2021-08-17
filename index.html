@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="body.css">
+</head>
+
+<body>
+    <div id="login_div" class="main">
+        <h2>LOGIN HERE</h2>
+        <input type="email" placeholder="E-mail id" id="email" />
+        <input type="password" placeholder="Password  " id="password" />
+        <button onclick="login()">LOGIN</button>
+    </div>
+    <div id="user_div" class="main">
+        <h2>Welcome !</h2>
+        <button onclick="logout()">LOGOUT</button>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyC-onpFvzJEnPnlglYB-gEt5ld9VCK5FOM",
+            authDomain: "login-ec4a7.firebaseapp.com",
+            projectId: "login-ec4a7",
+            storageBucket: "login-ec4a7.appspot.com",
+            messagingSenderId: "849109423413",
+            appId: "1:849109423413:web:a82e343b878b7b05e3a87c",
+            measurementId: "G-D09BFMKG7P"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+    <script src="index.js"></script>
+</body>
+
+</html>
